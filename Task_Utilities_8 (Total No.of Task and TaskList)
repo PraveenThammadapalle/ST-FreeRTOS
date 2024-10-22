@@ -106,6 +106,7 @@ void myTask2 (void *p){
 		
 		printf("The Total no of tasks running: %d \r\n", uxTaskGetNumberOfTasks());
 		printf("The total tick : %d\r\n", xTaskGetTickCount());
+		//printf("The total tick : %d\r\n", xTaskGetTickCountFromISR());  we get from ISR
 		
 		vTaskDelay(1000 * configTICK_RATE_HZ / 1000); //1 Sec Delay
 		}

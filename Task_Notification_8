@@ -86,13 +86,13 @@ void myTask1 (void *p){
 		//xTaskNotify(myTask2Handle, (1<<2) | (1<<1)| (1<<0), eSetBits); //printf is Notification Received: 7
 		//vTaskDelay(1000);
 
-		xTaskNotify(myTask2Handle, (1<<0), eSetValueWithOverwrite); //printf is Notification Received: 7
+		xTaskNotify(myTask2Handle, (1<<0), eSetValueWithOverwrite); 
 		vTaskDelay(1000);
 
-		xTaskNotify(myTask2Handle, (1<<1), eSetValueWithOverwrite); //printf is Notification Received: 7
+		xTaskNotify(myTask2Handle, (1<<1), eSetValueWithOverwrite); 
 		vTaskDelay(1000);
 
-		xTaskNotify(myTask2Handle, (1<<2), eSetValueWithOverwrite); //printf is Notification Received: 7
+		xTaskNotify(myTask2Handle, (1<<2), eSetValueWithOverwrite); 
 		vTaskDelay(1000);
 
 	}

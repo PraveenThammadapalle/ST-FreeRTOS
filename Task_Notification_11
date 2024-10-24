@@ -81,14 +81,15 @@ TaskHandle_t myTask2Handle = NULL;
 
 void myTask1 (void *p){
 
-	while(1)
-	{
 		uint32_t ulNotifiedValue;
 
 		xTaskNotify(myTask2Handle, (1<<0), eSetBits);
 		xTaskNotify(myTask2Handle, (1<<1), eSetBits);
 		xTaskNotifyStateClear(myTask2Handle);
 		xTaskNotify(myTask2Handle, (1<<2), eSetBits);
+	while(1)
+	{
+
 
 	}
 
